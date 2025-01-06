@@ -3,7 +3,7 @@ function applyCoupon(cart, coupon) {
     item.price -= coupon.discount;
   });
 }
-//
+// 깊은 복사하여 userBCart와 userACart가 다른 메모리주소를 바라 보도록 만들기
 let copyUser = function (target) {
   let result = {};
   if (typeof target === "object" && target !== null) {
