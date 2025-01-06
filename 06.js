@@ -25,8 +25,6 @@ const userACart = {
 
 const userBCart = copyUser(userACart);
 
-userBCart.items[1].price = 25000;
-
 console.log("A", userACart);
 console.log("B", userBCart);
 
@@ -36,7 +34,7 @@ console.log("B", userBCart);
 // applyCoupon(userBCart, coupon);
 
 // 1.	실행 결과로 userACart.items와 userBCart.items는 각각 어떻게 달라져 있을까요?
-// -> 14줄 const userBCart = userACart 로 인해서 userB의카트 와 userA카트는 동일한 값을 같게 된다.
+// -> const userBCart = userACart 로 인해서 userB의카트에 userA카트를 바로 할당해 주었기에 동일한 메모리를
 
 // 2.	1번의 결과에 대한 이유를 설명해보세요.
 

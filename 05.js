@@ -21,15 +21,13 @@ function fixedScores(scores) {
   // 4번 문제의 계산기 함수를 활용한 코드를 작성해주세요.
   // 배열을 순회하며 3점씩 추가 하기
   // 기존 점수를 변수로 받아옴, 배열 순회 과정중 계산기 함수 사용.
-  let fixedScores = [];
 
   for (let i = 0; i < scores.length; i++) {
-    fixedScores.push(calculator(scores[i], "+", 3));
+    scores[i] = calculator(scores[i], "+", 3);
   }
-  return fixedScores;
 }
 
 fixedScores(scores);
 
-console.log(scores);
+console.log("fixdScores: ", scores);
 // 기대값: [39, 65, 75, 58, 89, 98, 95, 51, 84]
