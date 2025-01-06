@@ -4,9 +4,9 @@ console.log(uninitialized); // 결과값 < undefined >
 // 변수 선언만 되고 값을 할당하지 않아서
 
 // 2.
-let apple = "사과";
+const apple = "사과";
 apple = "바나나"; // TypeError: Assignment to constant variable
-//변수선언이 되지 않아 에러가 났고, 갑을 재할당 할수있는 변수는 let
+//변수에 값이 재할당되어 난 오류, const는 재할당 불가 -> 재할당 가능한 변수는 let
 
 // 3.
 let lotto = [3, 8, 13, 19, 21, 32];
